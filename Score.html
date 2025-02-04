@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คะแนนของคุณ</title>
+    <link rel="stylesheet" href="Scorestyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ทำดีที่สุดแล้ว</h1>
+        <p id="finalScore"></p>
+        <button onclick="restartGame();">เมนู</button>
+    </div>
+
+    <script>
+        // ดึงคะแนนรอบล่าสุดจาก localStorage
+        let finalScore = localStorage.getItem("finalScore");
+
+        // ดึงคะแนนจาก localStorage และแสดงผล
+        document.getElementById("finalScore").innerText = "คะแนนของคุณคือ: " + localStorage.getItem("finalScore") + " คะแนน";
+
+        // ฟังก์ชันเล่นเสียงเอฟเฟค
+        function playSound(soundFile) {
+            let audio = new Audio(soundFile);
+            audio.play();
+        }
+        
+        // ฟังก์ชันรีสตาร์ทเกมพร้อมเสียงและดีเลย์
+        function restartGame() {
+            playSound('sound/button.mp3'); 
+            setTimeout(() => {
+                window.location.href = "SplitGame.html"; 
+            }, 800); 
+        }
+    </script>
+</body>
+</html>

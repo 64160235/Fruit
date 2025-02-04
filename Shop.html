@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้าไอเทม</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="ShopAll">
+    <div class="containerS">
+        <p id="scoreAllDisplay" class="scroeSize">0 คะแนน</p>
+
+        <div class="shelf">
+            <div class="item lightbulb-item">
+                <img src="image/lightbulb.png" alt="หลอดไฟ">
+                <button class="item-button" onclick="purchaseItem('lightbulb', 3)">ใช้ 3 คะแนน</button>
+            </div>
+        </div>
+        
+        <!-- ชั้นของนาฬิกาทราย -->
+        <div class="shelf">
+            <div class="item hourglass-item">
+                <img src="image/hourglass.png" alt="นาฬิกาทราย">
+                <button class="item-button" onclick="purchaseItem('hourglass', 3)">ใช้ 3 คะแนน</button>
+            </div>
+        </div>
+        
+        
+        <div>
+            <div id="purchasedItemsDisplay" ></div>
+        </div>
+        <div class="backBTB">
+            <button class="back-button" onclick="goBack()">กลับ</button>
+        </div>
+        <div class="resetScore">
+            <button class="reset-button" onclick="resetScoreAll()">รีเซ็ตคะแนน</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

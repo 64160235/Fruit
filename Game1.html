@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลไม้มหาสนุก</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body2">
+    <div class="container">
+        <div class="level-box">
+            <p id="levelDisplay">Level 1</p>
+            <p id="timerDisplay">เวลา: 10 วินาที</p>
+        </div>
+        <div class="image-box">
+            <img id="fruitImage" src="" alt="ผลไม้" />
+        </div>
+        <div class="choices">
+            <button class="choice-btn" onclick="checkAnswer(this)">ตัวเลือก 1</button>
+            <button class="choice-btn" onclick="checkAnswer(this)">ตัวเลือก 2</button>
+            <button class="choice-btn" onclick="checkAnswer(this)">ตัวเลือก 3</button>
+            <button class="choice-btn" onclick="checkAnswer(this)">ตัวเลือก 4</button>
+        </div>
+        <p id="result"></p>
+        <div class="inventory">
+            <div id="playerItems"></div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

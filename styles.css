@@ -1,0 +1,431 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('image/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ff9800;
+    text-shadow: 2px 2px 5px #000;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 5px solid #000;
+}
+
+.play-btn {
+    margin-top: 580px;
+    padding: 15px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #000;
+}
+
+.play-btn:hover {
+    background-color: #e64a19;
+}
+
+.body1 {
+    margin: 0;
+    padding: 0;
+    background: url('image/3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.play-btn1 {
+    margin-top: 200px;
+    margin-right: 620px;
+    padding: 15px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #000;
+}
+.play-btn2 {
+    margin-top: 200px;
+    padding: 15px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #000;
+}
+
+.Tutorial1 {
+    margin: 0;
+    padding: 0;
+    background: url('image/4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.Tutorial2 {
+    margin: 0;
+    padding: 0;
+    background: url('image/Tutorial2.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.ShopAll {
+    margin: 0;
+    padding: 0;
+    background: url('image/shop.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden; /* ปิดการเลื่อนหน้าจอ */
+    width: 100%;
+    height: 100%;
+}
+.play-btn3 {
+    margin-top: 21cm;
+    margin-left: 38cm;
+    padding: 15px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ff5722;
+    border: 5px solid #000000;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #000;
+}
+.shop-btn {
+    position: absolute;
+    margin-top: -20cm;
+    margin-left: 16.5cm;
+    padding: 15px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #dfcdc7;
+    border: 5px solid #000000;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #000;
+}
+.body2 {
+    margin: 0;
+    padding: 0;
+    background: url('image/Game1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.body3 {
+    margin: 0;
+    padding: 0;
+    background: url('image/Game2.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.image-box img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+
+.choices {
+    position: absolute;
+    bottom: 150px; /* ขยับปุ่มให้อยู่ด้านล่าง */
+    left: 50%;
+    transform: translateX(-50%); /* จัดให้อยู่กึ่งกลาง */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* จัดปุ่มเป็น 2 คอลัมน์ */
+    gap: 50px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.choice-btn {
+    width: 180px;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 3px solid #ff6600;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.choice-btn:hover {
+    background-color: #ffcc00;
+}
+
+#result, #hintDisplay {
+    position: absolute;
+    font-size: 30px;
+    margin-top: -8cm;
+    margin-left: 39cm;
+    font-weight: bold;
+    background: white; 
+    border-radius: 10px;
+    display: inline-block;
+    border: 3px solid orange;
+}
+
+.level-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #4CAF50;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#timerDisplay {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+    margin-top: 5px;
+}
+
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;  /* ขนาดความกว้างของกรอบ */
+    height: 350px; /* ขนาดความสูงของกรอบ */
+    background-color: #fff; /* กำหนดสีพื้นหลังของกรอบ */
+    border: 10px solid #ffa500; /* ใส่ขอบสีส้ม */
+    border-radius: 20px; /* ทำขอบมน */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูโดดเด่น */
+    padding: 20px; /* เพิ่มพื้นที่รอบรูปภาพ */
+    box-sizing: border-box; /* ให้ขนาดรวม padding และ border */
+    margin-top: -250px;
+    
+}
+.question-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;  /* ขนาดความกว้างของกรอบ */
+    height: 200px; /* ขนาดความสูงของกรอบ */
+    background-color: #fff; /* กำหนดสีพื้นหลังของกรอบ */
+    border: 4px solid #ffa500; /* ใส่ขอบสีส้ม */
+    border-radius: 20px; /* ทำขอบมน */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูโดดเด่น */
+    padding: 20px; /* เพิ่มพื้นที่รอบรูปภาพ */
+    box-sizing: border-box; /* ให้ขนาดรวม padding และ border */
+    margin-top: -250px;
+    font-size: 30px;
+}
+
+#fruitImage {
+    width: 300px;  /* ขนาดภาพ */
+    height: 300px; /* ขนาดภาพ */
+    object-fit: contain;  /* ทำให้ภาพอยู่ในกรอบโดยไม่ถูกตัด */
+}
+/* ชั้นวางไอเท็ม */
+.shelves {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* ไอเท็มแยกคนละฝั่ง */
+    margin: 50px auto; /* กำหนดระยะห่างจากขอบ */
+    padding: 20px;
+}
+
+/* ไอเท็มหลอดไฟ */
+.lightbulb-item {
+    position: absolute; /* ใช้ absolute สำหรับกำหนดอิสระ */
+    top: 68%; /* จัดให้อยู่ต่ำกว่า */
+    left: 10%; /* กำหนดให้ชิดด้านซ้าย */
+    text-align: center;
+}
+
+/* ไอเท็มนาฬิกาทราย */
+.hourglass-item {
+    position: absolute; /* ใช้ absolute สำหรับกำหนดอิสระ */
+    top: 68%; /* จัดให้อยู่ต่ำกว่า */
+    right: 10%; /* กำหนดให้ชิดด้านขวา */
+    text-align: center;
+}
+
+/* รูปภาพในแต่ละไอเท็ม */
+.item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่างรูปภาพกับปุ่ม */
+}
+
+/* ปุ่มของไอเท็ม */
+.item-button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+.item-button:hover {
+    background-color: #218838;
+}
+
+/* ปิด scrolling */
+html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* ปิดการเลื่อนหน้าจอ */
+    width: 100%;
+    height: 100%;
+}
+
+/* ให้คอนเทนเนอร์พอดีกับหน้าจอ */
+.containerS {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* จัดระยะห่างไอเท็ม */
+    align-items: center;
+    overflow: hidden; /* ปิดการล้น */
+}
+.shelf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: row; /* รูปภาพและปุ่มอยู่ในแนวนอน */
+    align-items: center; /* จัดให้ไอเท็มและปุ่มอยู่ในระดับความสูงเดียวกัน */
+    
+    
+}
+#playerItems {
+    display: flex; /* ใช้ flexbox เพื่อจัดรูปในแนวนอน */
+    top:  90%;
+    right: 85%;
+    position: absolute; /* ใช้ absolute สำหรับกำหนดอิสระ */
+    border: 10px solid #fff; /* เส้นขอบรอบแต่ละไอเท็ม */
+    border-radius: 80px; /* มุมโค้งมน */
+    background-color: #fff; /* สีพื้นหลังของไอเท็ม */
+}
+#purchasedItemsDisplay {
+    display: flex; /* ใช้ flexbox เพื่อจัดรูปในแนวนอน */
+    top:  82%;
+    right: 43%;
+    position: absolute; /* ใช้ absolute สำหรับกำหนดอิสระ */
+    border: 10px solid #fff; /* เส้นขอบรอบแต่ละไอเท็ม */
+    border-radius: 80px; /* มุมโค้งมน */
+    background-color: #fff; /* สีพื้นหลังของไอเท็ม */
+}
+
+#purchasedItemsDisplay img {
+    width: 80px; /* ความกว้างของรูป */
+    height: 80px; /* ความสูงของรูป */
+    object-fit: contain; /* ปรับขนาดรูปโดยรักษาสัดส่วน */
+    border-radius: 5px; /* มุมโค้งมน (ถ้าต้องการ) */
+    top:  20%;
+}
+.back-button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute; /* ใช้ absolute สำหรับกำหนดอิสระ */
+
+}
+.backBTB{
+   right: 10%;
+   top: 93%;
+   position: absolute; /* ใช้ absolute สำหรับกำหนดอิสระ */
+}
+.scroeSize{
+    font-size: 50px;
+    right: 7%;
+    position: absolute; /* ใช้ absolute สำหรับกำหนดอิสระ */
+}
+#answerInput {
+    width: 60%; /* กำหนดความกว้าง */
+    padding: 15px; /* เพิ่มความหนาของช่องรับคำตอบ */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    border: 2px solid #ffa500; /* สีกรอบ */
+    border-radius: 10px; /* มุมโค้ง */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    margin-bottom: 20px; /* เพิ่มช่องว่างระหว่าง input กับปุ่ม */
+    outline: none; /* ลบเส้นรอบเมื่อคลิก */
+}
+
+#answerInput:focus {
+    border-color: #ff6600; /* สีกรอบเมื่อ focus */
+    box-shadow: 0 0 10px #ff6600; /* เงาเมื่อ focus */
+}
+
+#submitBtn {
+    padding: 15px 30px; /* ระยะห่างภายในปุ่ม */
+    font-size: 20px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวอักษรหนา */
+    color: white; /* สีตัวอักษร */
+    background-color: #4CAF50; /* สีพื้นหลัง */
+    border: none; /* ลบเส้นกรอบ */
+    border-radius: 10px; /* มุมโค้ง */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อ hover */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* เพิ่มเอฟเฟกต์ */
+}
+
+#submitBtn:hover {
+    background-color: #45a049; /* สีเมื่อ hover */
+    transform: scale(1.05); /* ขยายปุ่มเล็กน้อยเมื่อ hover */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* จัดวางในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลาง */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+}
